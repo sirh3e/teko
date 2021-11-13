@@ -1,6 +1,6 @@
-package exercises;
+package sirh3e.dev.teko.exercises;
 
-import core.Exercise;
+import sirh3e.dev.teko.core.Exercise;
 
 public class Exercise01 implements Exercise {
     @Override

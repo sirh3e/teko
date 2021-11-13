@@ -1,4 +1,4 @@
-package core;
+package sirh3e.dev.teko.core;
 
 public interface Exercise {
     void execute();
