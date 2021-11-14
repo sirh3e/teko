@@ -1,6 +1,7 @@
-import core.Exercise;
-import core.Result;
-import exercises.Exercise01;
+package sirh3e.dev.teko;
+
+import sirh3e.dev.teko.core.Exercise;
+import sirh3e.dev.teko.exercises.Exercise01;
 
 public class Main {
     public static void main(String[] args) {
