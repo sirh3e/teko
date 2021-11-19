@@ -21,7 +21,7 @@ public class Result<TOk, TErr> {
     }
 
     public <T> Result<T, TErr> map(Function<TOk, T> map) {
-        return this._isOk
+        return isOk()
                 ? Factory.fromOk(map.apply(this._ok))
                 : Factory.fromErr(this._err);
     }
@@ -31,11 +31,11 @@ public class Result<TOk, TErr> {
     }
 
     public boolean isErr() {
-        return !isOk();
+        return isOk() == false;
     }
 
     public TOk unwrap() {
-        if (this._isOk) {
+        if (isOk()) {
             return this._ok;
         }
         throw new RuntimeException();
