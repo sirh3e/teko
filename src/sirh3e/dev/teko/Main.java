@@ -1,5 +1,6 @@
 package sirh3e.dev.teko;
 
+import sirh3e.dev.rust.Result;
 import sirh3e.dev.teko.core.Exercise;
 import sirh3e.dev.teko.exercises.Exercise01;
 
@@ -26,11 +27,11 @@ public class Main {
  */
     }
 
-    public static Result<Integer, String> parseToInt(String text){
-        try{
-            var number =Integer.parseInt(text);
+    public static Result<Integer, String> parseToInt(String text) {
+        try {
+            var number = Integer.parseInt(text);
             return Result.Factory.fromOk(number);
-        }catch (NumberFormatException exception){
+        } catch (NumberFormatException exception) {
             return Result.Factory.fromErr(text);
         }
     }
