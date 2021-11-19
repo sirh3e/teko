@@ -1,4 +1,4 @@
-package core;
+package sirh3e.dev.rust;
 
 import java.util.function.Function;
 
